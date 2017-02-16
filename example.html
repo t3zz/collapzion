@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Button Collapzion - Example</title>
+    <link rel="stylesheet" href="./collapzion.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./collapzion.min.js"></script>
+	
+ </head>
+ 	<body>
+		<script type="text/javascript">
+		jQuery(function($){
+			$('#btncollapzion').Collapzion({
+	            _child_attribute:[
+	              	{
+	                  'label':'Create new Document',
+	                  'url':'/Create',
+	                  'icon':'&#xE150;'
+	              	},
+	              	{
+		              'label':'Manage My Document',
+		              'url':'/manage',
+		              'icon':'&#xE873;'
+	              	},
+	              	{
+		              'label':'My Profile',
+		              'url':'/profile',
+		              'icon':'&#xE7FD;'
+	              	},
+	          	],
+	          	_main_btn_color:'#4285f4;',
+	          	_child_btn_color:'#f4645f;',
+        	});
+		});
+		</script>
+
+		<div id="btncollapzion" class=" btn_collapzion"></div>
+	</body>
+</html>
+
