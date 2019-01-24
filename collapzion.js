@@ -58,13 +58,16 @@
         // toggle button 
         _base.collapz_btn = function(_element, child_attribute){
             if(_element.hasClass('_close')){
-                
                 _element.css({
                     '-webkit-transform': 'rotate(90deg)',
                     '-moz-transform': 'rotate(90deg)',
                     'transform': 'rotate(90deg)',
                 });
                 _element.removeClass('_close');
+                $('.Player').css('filter', 'blur(1px)');
+                $('.Player').css('filter', 'blur(2px)');
+                $('.Player').css('filter', 'blur(3px)');
+		console.log('blur web player');
                 _element.addClass('_open');
                 
                 var _child_el = '<ul class="_child_collapzion">';                
@@ -85,6 +88,9 @@
                     'transform': 'rotate(44deg)',
                 });
                 _element.removeClass('_open');
+                $('.Player').css('filter', 'blur(2px)');
+                $('.Player').css('filter', 'blur(1px)');
+                $('.Player').css('filter', 'blur(0px)');
                 _element.addClass('_close');                
             }          
         }

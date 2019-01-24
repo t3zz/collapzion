@@ -36,6 +36,11 @@ a._collapz_parant {
 }
 a._collapz_parant._close {
     background-color: #e45353;
+position: fixed;
+
+bottom: 30px;
+
+right: 25px;
 }
 a._collapz_parant._close:after {
     left: 0;
