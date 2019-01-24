@@ -24,7 +24,7 @@
         var _base = this;
         var _settings = $.extend({
             _pos: {
-//                'width':'100%',
+                'width':'40%',
                 'min-height':'20%',
                 'position':'fixed',
                 'right':'0',
