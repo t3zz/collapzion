@@ -24,11 +24,11 @@
         var _base = this;
         var _settings = $.extend({
             _pos: {
-                'width':'100%',
+//                'width':'100%',
                 'min-height':'20%',
                 'position':'fixed',
                 'right':'0',
-                'left': '-20px',
+//                'left': '-20px',
                 'bottom': '-25px',
                 'text-align':'center',
                 'padding': '0px 8px',
